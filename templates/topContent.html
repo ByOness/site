@@ -5,7 +5,7 @@
         {{ range $v := .SpecialGames }}
         <div class="buyElement" id="{{ $v.ShortName }}">
             <div class="imgContainer">
-                <img src="https://gameforkey.herokuapp.com/content/img/{{ $v.ShortName }}.jpg" alt="{{ $v.TitleName }}">
+                <img src="./content/img/{{ $v.ShortName }}.jpg" alt="{{ $v.TitleName }}">
                 <div class="titleName">{{ $v.TitleName }}</div>
             </div>
             <div class="buyButton">КУПИТЬ ИГРУ</div>
@@ -22,7 +22,7 @@
             <ul>
                     {{ range $v := .LastGames }}
                 <li class="lastElement {{ if $v.Buy }} buy {{ else }} sell {{ end }}">
-                    <img src="https://gameforkey.herokuapp.com/content/img/{{$v.Name}}Ico.jpg" alt="">
+                    <img src="./content/img/{{$v.Name}}Ico.jpg" alt="">
                     <div class="titleE">
                         {{ $v.Title }}
                     </div>

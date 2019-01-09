@@ -10,11 +10,11 @@
 
     <title>keyforplay.ru</title>
 
-    <link rel="stylesheet" href="https://gameforkey.herokuapp.com/content/css/main.css">
+    <link rel="stylesheet" href="./content/css/main.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://gameforkey.herokuapp.com/content/js/buy.js"></script>
+    <script src="./content/js/buy.js"></script>
 
 </head>
 
@@ -85,7 +85,7 @@
         <div class="container content">
             <div class="row">
                 <div class="buyContainer">
-                    <img src="https://gameforkey.herokuapp.com/content/img/{{ .GameInfo.ShortName }}.jpg" alt="" class="buyImage">
+                    <img src="./content/img/{{ .GameInfo.ShortName }}.jpg" alt="" class="buyImage">
                 </div>
                 <div class="buyDescription">
                     <span>ОПИСАНИЕ</span>
@@ -100,7 +100,7 @@
 
             <div class="row">
                 <div class="gameBonus" id="{{ .BonusInfo }}">
-                    <img src="https://gameforkey.herokuapp.com/content/img/bonus.png" alt="" />
+                    <img src="./content/img/bonus.png" alt="" />
 
                     <div class="gameBonusText">
                         Активирована скидка: <span class="big">bonus{{ .BonusInfo }} -{{ .Discount }}%
@@ -124,7 +124,7 @@
                         </div>
                         <div class="nextButton">
                             <div class="textButton">Продолжить</div>
-                            <img src="https://gameforkey.herokuapp.com/content/img/ch.png" alt="">
+                            <img src="./content/img/ch.png" alt="">
                         </div>
                         <div class="license">Перед покупкой<br>
                             настоятельно рекомендуем прочитать <br>

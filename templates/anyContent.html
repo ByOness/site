@@ -6,7 +6,7 @@
             {{ range $i, $v := .}}
             <div class="anyItem" id="{{ $v.ShortName}}">
                 <div class="anyTitle">Steam</div>
-                <img src="https://gameforkey.herokuapp.com/content/img/{{ $v.ShortName}}.jpg" alt="">
+                <img src="./content/img/{{ $v.ShortName}}.jpg" alt="">
                 <div class="anyButton">КУПИТЬ ИГРУ</div>
                 <div class="anyPrise">Цена: {{ $v.Prise }}</div>
             </div>
