@@ -1,0 +1,36 @@
+{{define "topContent"}}
+<div class="container">
+    <div class="buyContent">
+        <div class="buyTitle">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ - 10% СКИДКА</div>
+        {{ range $v := .SpecialGames }}
+        <div class="buyElement" id="{{ $v.ShortName }}">
+            <div class="imgContainer">
+                <img src="https://gameforkey.herokuapp.com/content/img/{{ $v.ShortName }}.jpg" alt="{{ $v.TitleName }}">
+                <div class="titleName">{{ $v.TitleName }}</div>
+            </div>
+            <div class="buyButton">КУПИТЬ ИГРУ</div>
+            <div class="buyPrise">Цена: {{ $v.Prise }}</div>
+        </div>
+        {{ end }}
+       
+    </div>
+
+    <div class="lastContent">
+        <div class="lastTitle">ПОСЛЕДНИЕ 5 ПОКУПОК & ПРОДАЖ</div>
+
+        <div class="lastElements">
+            <ul>
+                    {{ range $v := .LastGames }}
+                <li class="lastElement {{ if $v.Buy }} buy {{ else }} sell {{ end }}">
+                    <img src="https://gameforkey.herokuapp.com/content/img/{{$v.Name}}Ico.jpg" alt="">
+                    <div class="titleE">
+                        {{ $v.Title }}
+                    </div>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="sellButton">ПРОДАТЬ КЛЮЧ</div>
+    </div>
+</div>
+{{end}}

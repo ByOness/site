@@ -1,0 +1,627 @@
+html, body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+    height: 100%;
+}
+
+body {
+    background: url(/content/img/bg.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-attachment:fixed;
+} 
+.container{
+    width: 1230px;
+    margin: 0px auto;
+} 
+.head {
+    min-width: 1230px;
+    width: 100%;
+    padding-bottom: 3px;
+    background: #fff;
+    box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.08);
+}
+
+.left>img{
+    
+    float: left;
+}
+
+.left {
+    width: 330px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.title{
+    margin-top:58px;
+    margin-left:-53px;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.title>span {
+    margin-top: -25px;
+    font-size: 30px;
+    font-weight: bold
+}
+.l {
+    margin-top:-5px;
+    margin-left: 2px;
+}
+
+.center {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 90px;
+}
+
+.search {
+    
+    background: gray;
+    width: 500px;
+
+    display: inline-block;
+    position: relative;
+
+    display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 13px 20px;
+  border: none;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  
+  font: normal 20px/normal "Roboto", Times, serif;
+  font-size: 20px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #f6f6f6;
+  -webkit-box-shadow: 10px 10px 20px -7px rgba(0,0,0,0.2) inset;
+  box-shadow: 10px 10px 20px -7px rgba(0,0,0,0.2) inset;
+
+}
+
+.right {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    vertical-align: top;
+    background: #fdfc34;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.h {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.f {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.buyContent {
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.buyElement {
+    margin: 20px;
+    display: inline-block;  
+}
+
+.imgContainer {
+    width: 231px;
+    height: 343px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgContainer>img {
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    
+    width: auto;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.buyTitle {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.buyButton {
+    margin-top: 5px;
+    color: #fdfc34;
+    font-weight: bold;
+    font-size: 18px;
+    width: 221px;
+    background: black;
+    padding: 5px 5px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.buyPrise {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.imgContainer {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.titleName {
+    position: absolute;
+    bottom: 8px;
+    color: #fff;
+    font-size: 22px;
+    width: 98%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.lastContent {
+    margin-top: 20px;
+    float: right;
+    text-align: center;
+}
+
+.lastTitle {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.lastElements {
+    text-align: left;
+    margin-top: 10px;
+    width: 300px;
+   cursor: default;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lastElement {
+    cursor: default;
+ text-decoration: none;
+ padding: 10px;
+ margin-top: 10px;
+}
+
+.sellButton {
+    cursor: pointer;
+    margin: 15px auto;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    width: 221px;
+    background: #fdfc34;
+    padding: 10px 5px;
+    border-radius: 25px;
+}
+
+.anyContainer {
+    margin: 10px auto;
+    width: 870px;
+}
+
+.borderBottom {
+    margin: 10px auto;
+    width: 870px;
+    border: 2px solid #f2f3f6;
+}
+.anyLine {
+    width: 100%;
+}
+
+.anyItem {
+    margin: 10px 23px;
+    width: 240px;
+    display: inline-block;
+}
+.centerItem {
+    margin: 10px 25px;
+}
+
+.anyItem>img {
+    width:240px;
+    height: 106px;
+}
+
+.anyTitle {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.anyButton {
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    width: 220px;
+    background: #dfdfdf;
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.anyPrise {
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-style: italic;
+
+    display: block;
+    flex: 0 0 auto;
+}
+
+.row{
+    width: 1150px;
+    margin: 20px auto
+}
+.buyContainer {
+    width: 412px;
+    height: 228px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.buyImage {
+    width: 412px;
+    height: auto;
+}
+
+.buyDescription{
+    margin-left: 40px;
+    vertical-align: top;
+    display: inline-block;
+    font-style: italic;
+    font-size: 12px;
+    width: 680px;
+    font-weight: bold;
+    line-height: 1.5
+}
+
+.buyDescription>span{
+    font-style: normal;
+    font-size: 18px;
+}
+
+.gameTitle {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.gameBonus>img{
+   z-index: 30;
+   position: relative;
+    display: inline-block;
+}
+.gameBonusText {
+    
+    border: 11px solid white;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-left: -80px;
+    font-size: 22px;
+
+    color:#fff;
+    background: #000;
+    border-radius: 25px;
+    
+    padding: 5px 10px;
+    padding-left: 70px;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 24px;
+}
+.small {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.yellow {
+    font-size: 24px;
+    color: #fdfc34;
+}
+
+.fastTitle {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #f6f6f6;
+}
+
+.formBuy {
+    padding-top: 65px;
+    padding-left: 20px;
+    display: inline-block;
+    height: 224px;
+}
+
+.fastBuy {
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.emailInput {
+    margin-top: 12px;
+    width: 315px;
+    background: #eeeeee;
+    border:none;
+    outline: none;
+    padding: 12px;
+    font: bold 12px/normal "Roboto", Times, serif;
+}
+
+.emailInput::placeholder{
+    color: #cccccc; 
+    font-weight: bold;
+}
+
+.nextButton{
+    margin: 30px auto;
+    margin-bottom: 10px;
+    background: #fdfc34;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 7px;
+    padding-bottom: 5px;
+    width: 250px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.textButton{
+    display: inline-block;
+    vertical-align: top;  
+    margin-top: 5px;
+}
+
+.nextButton>img{
+    display: inline-block;
+}
+
+.license{
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+.license>a {
+    text-decoration: none;
+    color: #2e87db;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.video{
+    padding: 10px;
+    float: right;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 10px solid #fdfc34;
+    border-color: #fdfc34 transparent #fdfc34 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+  .wrapper {
+    display: flex;
+  flex-direction: column;
+  height: 100%;
+  }
+
+  .content {
+    flex: 1 0 auto;
+  }
+
+  .buy {
+      border: 2px solid rgb(51, 128, 0);
+  }
+  .sell {
+    border: 2px solid rgb(255, 136, 0);
+  }
+
+  .lastElement>img{
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      margin-left: 20px;
+  }
+  .titleE {
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 18px;
+      vertical-align: top
+  }
+
+  .toBuyButton, .checkButton {
+      border: 2px solid #fd9534;
+      margin: 10px 0;
+      padding: 10px;
+      background: #fdfc34;
+      border-radius: 25px;
+      width: 250px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  .toBuyButton:hover, .checkButton:hover {
+    background: #fd9534;
+  }
+
+  .bold {
+    font-weight: bold;
+    color: #fd9534;
+  }
+  .opTitle>a{
+      text-decoration: none;
+  }
+  .opTitle {
+    text-decoration: none;
+      font-size: 20px;
+  }
+  .comm {
+      font-size: 14px;
+  }
+
+  .boldPrise {
+    font-weight: bold;
+    color: #fd9534;
+  }
+
+  .gameInfoKey {
+    font-size: 16px;
+  }
+
+  .popup {
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    display: none;
+    top:0px;
+    z-index: 99;
+}
+
+.plicense {
+    background: #fff;
+    color: #000;
+    font-size: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+.priseSellInfo {
+    float: right;
+    width: 400px;
+}
+
+.priseSellInfo>ul {
+    padding: 0;
+    margin: 0;
+}
+
+.priseSellInfo>ul>li {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.titleSell {
+    width: 80%;
+    display: inline-block;
+    background: #dfdfdf;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    
+}
+
+.priseSell {
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: right;
+    display: inline-block;
+    background: #fd9534;
+    padding: 9px;
+    width: 10%;
+    border: 1px solid #fd9534;
+}

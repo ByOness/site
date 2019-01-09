@@ -1,0 +1,17 @@
+{{define "anyContent"}}
+<div class="container">
+    <div class="borderBottom"></div>
+    <div class="anyContainer">
+        <div class="anyLine">
+            {{ range $i, $v := .}}
+            <div class="anyItem" id="{{ $v.ShortName}}">
+                <div class="anyTitle">Steam</div>
+                <img src="https://gameforkey.herokuapp.com/content/img/{{ $v.ShortName}}.jpg" alt="">
+                <div class="anyButton">КУПИТЬ ИГРУ</div>
+                <div class="anyPrise">Цена: {{ $v.Prise }}</div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{end}}

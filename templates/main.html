@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://gameforkey.herokuapp.com/content/css/main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+  <script src="https://gameforkey.herokuapp.com/content/js/main.js"></script>
+    <title>keyforplay.ru</title>
+</head>
+
+<body>
+    <div class="wrapper">
+            {{template "header"}}
+        <div class="content">
+            {{template "topContent" .Top }}
+            {{template "anyContent" .Bottom }}
+        </div>
+        <div class="container footer">
+            ©KEYFORPLAY.RU ALL RIGHTS RESERVED 2017
+        </div>
+    </div>
+</body>
+
+</html>
